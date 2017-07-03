@@ -13,3 +13,5 @@ Click here to find out more about the course, and how we build these assets step
   * BT01 Intro, Notes & Assets
   * BT02 Game Design Document (GDD)
   * BT03 Setting Up a GitHub "Repo"
+  * BT04 Creating & Deleting Landscape
+  * BT05 Landscape Setup & Scaling
