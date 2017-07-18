@@ -27,6 +27,9 @@ private:
 
 	UPROPERTY(EditAnyWhere)
 	float CrossHairYLocation = 0.3333f;
+
+	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
+
 public:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
