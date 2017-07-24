@@ -4,10 +4,16 @@
 #include "TankBarrel.h"
 
 
-void UTankBarrel::Elevate(float DegreePerSecond)
+void UTankBarrel::Elevate(float DegreesPerSecond)
 {
 	// move	the barrel the right amount this frame
 	// Given a max elevation speed ,and the frame time
-	UE_LOG(Logtemp,Warning,TEXT("Barrel Elevate : %f"),DegreePerSecond)
+	
 }
+
+//bool UTankBarrel::GetRotatable(FVector DeltaRotator) {
+//	if (DeltaRotator.y >= MinElevation.y && DeltaRotator.y <= MaxElevation) { return true; }
+//
+//	return false;
+//}
 
