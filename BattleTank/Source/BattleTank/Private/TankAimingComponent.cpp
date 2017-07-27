@@ -50,7 +50,7 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 	// TODO get a rotatable
 	//if (Barrel->GetRotatable(DeltaRotator)) { 
 		//UE_LOG(LogTemp, Warning, TEXT("Barrel is can rotate"));
-		Barrel->Elevate(5);
+		Barrel->Elevate(DeltaRotator.Pitch);
 	//}
 }
 
