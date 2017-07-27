@@ -18,7 +18,7 @@ public:
 	//bool GetRotatable(FVector DeltaRotator);
 private:
 	UPROPERTY(EditAnywhere, Category = Setup)
-	float MaxDegreesPerSeconds = 20.f;
+	float MaxDegreesPerSeconds = 10.f;
 	UPROPERTY(EditAnywhere, Category = Setup)
 	float MaxDegreesElevation = 40.f;
 	UPROPERTY(EditAnywhere, Category = Setup)
