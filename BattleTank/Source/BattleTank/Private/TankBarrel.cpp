@@ -15,9 +15,4 @@ void UTankBarrel::Elevate(float RelativeSpeed)
 	SetRelativeRotation(FRotator(Elevation,0,0));
 }
 
-//bool UTankBarrel::GetRotatable(FVector DeltaRotator) {
-//	if (DeltaRotator.y >= MinElevation.y && DeltaRotator.y <= MaxElevation) { return true; }
-//
-//	return false;
-//}
 
