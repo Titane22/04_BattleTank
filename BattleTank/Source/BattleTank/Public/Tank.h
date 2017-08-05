@@ -28,7 +28,7 @@ public:
 
 protected:
 	UTankAimingComponent* TankAimingComponent = nullptr;
-
+	AProjectile* ProjectileMovementComponent = nullptr;
 private:
 	// Sets default values for this pawn's properties
 	ATank();
