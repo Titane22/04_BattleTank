@@ -46,4 +46,7 @@ private:
 	TSubclassOf<AProjectile> ProjectileBlueprint; //Alternative https://docs.unrealengine.com/latest/KOR/Programming/UnrealArchitecture/TSubclassOf/index.html
 
 	UTankBarrel* Barrel = nullptr;
+
+	float ReloadTimeInSeconds = 6.7f;
+	double LastFireTime = 0;
 };
