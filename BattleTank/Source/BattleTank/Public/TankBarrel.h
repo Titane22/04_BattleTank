@@ -17,10 +17,10 @@ public:
 	void Elevate(float RelativeSpeed);
 	//bool GetRotatable(FVector DeltaRotator);
 private:
-	UPROPERTY(EditAnywhere, Category = Setup)
+	UPROPERTY(EditDefaultsOnly, Category = Setup)
 	float MaxDegreesPerSeconds = 10.f;
-	UPROPERTY(EditAnywhere, Category = Setup)
+	UPROPERTY(EditDefaultsOnly, Category = Setup)
 	float MaxDegreesElevation = 40.f;
-	UPROPERTY(EditAnywhere, Category = Setup)
+	UPROPERTY(EditDefaultsOnly, Category = Setup)
 	float MinDegreesElevation = 0.f;
 };
