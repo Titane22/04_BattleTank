@@ -11,14 +11,12 @@ void UTankMovementComponent::Initialize(UTankTrack* LeftTrackToSet, UTankTrack* 
 	LeftTrack = LeftTrackToSet;
 	RightTrack = RightTrackToSet;
 
-	LeftTrack->SetThrotlle(Speed);
-	RightTrack->SetThrotlle(Speed);
 }
 
 void UTankMovementComponent::IntendMoveForward(float Throw)
 {
-	auto Name = GetName();
-	UE_LOG(LogTemp, Warning, TEXT("%s Intend Move Forward : %f"), *Name, Throw);
+	UE_LOG(LogTemp, Warning, TEXT("Intend Move Forward : %f"), Throw);
 
-	
+	LeftTrack->SetThrotlle(Throw);
+	RightTrack->SetThrotlle(Throw);
 }

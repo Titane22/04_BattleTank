@@ -15,12 +15,13 @@ class BATTLETANK_API UTankBarrel : public UStaticMeshComponent
 public:
 	//-1 is minmum speed and 1 is maximum speed
 	void Elevate(float RelativeSpeed);
-	//bool GetRotatable(FVector DeltaRotator);
 private:
 	UPROPERTY(EditDefaultsOnly, Category = Setup)
 	float MaxDegreesPerSeconds = 10.f;
+
 	UPROPERTY(EditDefaultsOnly, Category = Setup)
 	float MaxDegreesElevation = 40.f;
+
 	UPROPERTY(EditDefaultsOnly, Category = Setup)
 	float MinDegreesElevation = 0.f;
 };

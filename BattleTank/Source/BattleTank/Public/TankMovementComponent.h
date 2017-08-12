@@ -21,9 +21,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Input)
 	void IntendMoveForward(float Throw);
 	
-	float Speed = 5.0f;
 private:
 	UTankTrack* LeftTrack = nullptr;
 	UTankTrack* RightTrack = nullptr;
 	
+	// TODO prevent double-speed due to dual control use 
 };
