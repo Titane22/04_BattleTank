@@ -10,7 +10,6 @@ void ATankAIController::BeginPlay()
 	Super::BeginPlay();
 
 }
-// TODO Get HitLocation
 // but, Ai don't have Deproject
 // Call AimAt from GetControlledTank()
 
