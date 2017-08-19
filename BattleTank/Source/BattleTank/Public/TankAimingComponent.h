@@ -54,8 +54,12 @@ private:
 	float ReloadTimeInSeconds = 6.7f;
 	double LastFireTime = 0;
 
+	FVector AimDirection;
+
 	UTankBarrel* Barrel = nullptr;
 	UTankTurret* Turret = nullptr;
 
 	void MoveBarrelTowards(FVector AimDirection);
+
+	bool isBarrelMoving();
 };
