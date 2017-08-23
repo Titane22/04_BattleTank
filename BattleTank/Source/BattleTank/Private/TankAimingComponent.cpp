@@ -44,7 +44,10 @@ bool UTankAimingComponent::isBarrelMoving()
 	return !BarrelForward.Equals(AimDirection, 0.01);
 }
 
-
+EAimingState UTankAimingComponent::GetAimingState()
+{
+	return AimingState;
+}
 
 void UTankAimingComponent::AimAt(FVector HitLocation)
 {

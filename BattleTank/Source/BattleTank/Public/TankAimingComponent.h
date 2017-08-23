@@ -32,6 +32,8 @@ public:
 
 	void AimAt(FVector HitLocation);
 
+
+	EAimingState GetAimingState();
 protected:
 	UPROPERTY(BlueprintReadOnly)
 	EAimingState AimingState = EAimingState::Reloading;
