@@ -11,7 +11,8 @@ enum class EAimingState :uint8
 {
 	Reloading,
 	Aiming,
-	Locked
+	Locked,
+	OutOfAmmo
 };
 
 class UTankBarrel;
@@ -32,6 +33,8 @@ public:
 
 	void AimAt(FVector HitLocation);
 
+	UFUNCTION(BlueprintCallable, Category = Setup)
+	int GetRoundsLeft() const;
 
 	EAimingState GetAimingState();
 protected:
@@ -52,6 +55,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = Firing)
 	float LaunchSpeed = 4000;
+
+	UPROPERTY(EditDefaultsOnly, Category = Setup)
+	int RoundsLeft = 3;
 
 	float ReloadTimeInSeconds = 6.7f;
 	double LastFireTime = 0;
