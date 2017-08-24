@@ -86,7 +86,7 @@ void UTankAimingComponent::MoveBarrelTowards()
 	auto DeltaRotator = AimAsRotator - BarrelRotator;
 
 	Barrel->Elevate(DeltaRotator.Pitch);
-	if (FMath::Abs(DeltaRotator.Yaw) < 180.0f)
+	if (FMath::Abs(DeltaRotator.Yaw) < 180)
 	{
 		Turret->Rotation(DeltaRotator.Yaw);
 	}
@@ -103,14 +103,14 @@ void UTankAimingComponent::Initialize(UTankBarrel* BarrelToSet, UTankTurret* Tur
 	Turret = TurretToSet;
 }
 
-int UTankAimingComponent::GetRoundsLeft() const
+int32 UTankAimingComponent::GetRoundsLeft() const
 {
 	return RoundsLeft;
 }
 
 void UTankAimingComponent::Fire()
 {
-	if (AimingState== EAimingState::Locked || AimingState == EAimingState::Aiming) {
+	if (AimingState == EAimingState::Locked || AimingState == EAimingState::Aiming) {
 		if (!ensure(Barrel)) { return; }
 		if (!ensure(ProjectileBlueprint)) { return; }
 		//Spawn a projectile at the socket location on the Barrel
